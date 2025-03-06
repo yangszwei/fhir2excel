@@ -1,0 +1,9 @@
+{
+  "name": "fhir2excel",
+  "scripts": {
+    "test": "node fhir2excel.js tests/example.json tests/output.xlsx"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

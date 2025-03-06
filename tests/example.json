@@ -1,0 +1,96 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "minion1",
+        "name": [
+          {
+            "use": "official",
+            "family": "Gru",
+            "given": ["Kevin"]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2010-01-01",
+        "address": [
+          {
+            "line": ["Minion Base"],
+            "city": "Villainville",
+            "country": "Villainland"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "minion2",
+        "name": [
+          {
+            "use": "official",
+            "family": "Gru",
+            "given": ["Stuart"]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2010-01-01",
+        "address": [
+          {
+            "line": ["Minion Base"],
+            "city": "Villainville",
+            "country": "Villainland"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "12345-6",
+              "display": "Minion Power Level"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 95,
+          "unit": "percent"
+        },
+        "subject": {
+          "reference": "Patient/minion1"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "67890-1",
+              "display": "Minion Power Level"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 80,
+          "unit": "percent"
+        },
+        "subject": {
+          "reference": "Patient/minion2"
+        }
+      }
+    }
+  ]
+}
